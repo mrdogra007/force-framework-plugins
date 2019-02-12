@@ -2,6 +2,8 @@
 
 ## Free web pages, themes, plugins and more things.
 
+Raw codes and plugins files for test purpose. Compatible with any framework and standalone plugins. Few are developed for Force Framework and checkout the working samples on Codepen @mrdogra007 https://codepen.io/mrdogra007/pens/popular/.
+
 Working on own ideas, some concepts and crafting product with best UX Design Practice and Development Standards. Here are some of my ideas and freebies, crafted in free time. Check more on my DograsWeblog Drive. http://dograsweblog.com/nishant-dogra/
 
 ![Force Framework](http://cloud.dograsweblog.com/++img/logo-icons/120.png)
