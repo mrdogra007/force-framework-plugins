@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body { font-family: 'Open Sans', sans-serif;}
+h1 { text-align: center; font-size: 28px; font-weight: 600; margin-top: 40px; margin-bottom: 30px;}
+ul { margin: 0; padding: 0; list-style: none;}
+ul li { cursor: pointer; position: relative; padding: 12px 8px 12px 40px; background: #eee; font-size: 18px; border-bottom: 2px solid rgba(234, 230, 230, 0.08); transition: 0.2s; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+ul li:nth-child(2n) { background: #f9f9f9;}
+ul li:hover { background: #ddd;}
+ul li.checked { background: #2568ff; color: #fff; text-decoration: line-through;}
+ul li.checked::before { content: ''; position: absolute; border-color: #fff; border-style: solid; border-width: 0 2px 2px 0; top: 15px; left: 15px; transform: rotate(45deg); height: 15px; width: 7px;}
+
+.close { position: absolute; right: 10px; top: 10px; width: 29px; height: 29px; text-align: center; padding: 3px; border-radius: 50%;}
+.close:hover { background-color: #ff392a; color: #ffffff;}
+
+.todo-data-form { padding: 15px 0; float: left; width: 100%;}
+/* .header { background-color: #f44336; padding: 30px 40px; color: white; text-align: center;}
+.header:after { content: ""; display: table; clear: both;} */
+
