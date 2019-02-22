@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>Pure CSS based tabs plugin - Nishant Dogra</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body { width: 100%; float: left; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; line-height: 1.8; background: #e1e1e1; color: #676767;}
+* { box-sizing: border-box; margin: 0; padding: 0;}
+h1 { font-size: 24px;  margin-bottom: 20px;}
+h2 { font-size: 20px;  margin-bottom: 20px;}
+p { font-size: 18px; font-weight: lighter; margin-bottom: 20px;}
+a { font-size: 18px; color: #185bda;}
+
+.wrapper { width: 100%; float: left;}
+.wrapper.dark { background: #323232; color: #ffffff;}
+form { position: relative; background: #fff; margin: 40px auto 60px;}
+.tabs-layout { width: 100%; float: left; margin: 0;}
+.label { color: #9e9e9e; font-weight: normal; font-size: 18px; border-bottom: 1px solid #e1e1e1; } 
+input[type=radio] { display: none;}
+input[type=radio]:not(checked) ~ .content { display: none;}
+input[type=radio]:checked ~ .content { display: block;}
+input[type=radio]:checked ~ .label { color: #185bda;}
+
+input[type=radio]:checked + .first-label::before { content: ''; position: absolute; height: 2px; width: 100%; background: #185bda; bottom: -2px; right: 0; transition: right 20ms;} 
+input[type=radio]:not(checked) + .first-label::before { content: ''; width: 0; left: 0%; transition: left 20ms;}
+input[type=radio]:checked + .second-label::before { content: ''; position: absolute; height: 2px; width: 100%; background: #185bda; bottom: -2px; left: 0; transition: left 20ms;}
+input[type=radio]:not(checked) + .second-label::before { content: ''; width: 0; left: -100%; transition: left 20ms;}
+input[type=radio]:checked + .third-label::before { content: ''; position: absolute; height: 2px; width: 100%; background: #185bda; bottom: -2px; left: 0; transition: left 20ms;}
+input[type=radio]:not(checked) + .third-label::before { content: ''; width: 0; left: -100%; transition: left 20ms;}
+input[type=radio]:checked + .fourth-label::before { content: ''; position: absolute; height: 2px; width: 100%; background: #185bda; bottom: -2px; left: 0; transition: left 20ms;}
+input[type=radio]:not(checked) + .fourth-label::before { content: ''; width: 0; left: -100%; transition: left 20ms;}
+
+input[type=radio] + .first-label:hover, 
+input[type=radio] + .second-label:hover,
+input[type=radio] + .third-label:hover,
+input[type=radio] + .fourth-label:hover { color: #185bda; background: #e6e6e6;}
+
+.first-label, .second-label, .third-label, .fourth-label { position: absolute; top: 0; padding: 12px 10px; width: 150px; text-align: center; background: #fafafa; z-index: 999;}
+.first-label { left: 0;}
+.second-label { left: 150px;}
+.third-label { left: 300px;}
+.fourth-label { left: 450px;}
+
+.content { position: relative; padding: 80px 20px 40px; margin: 0; box-sizing: border-box;}
+.about { margin: 0 auto; max-width: 800px; padding: 40px 20px;}
+
+@media only screen and (max-width: 768px)  {
+.first-label, .second-label, .third-label, .fourth-label { position: absolute; top: 0; padding: 12px 10px; width: 100px; text-align: center; background: #fafafa; z-index: 999;}
+.first-label { left: 0;}
+.second-label { left: 100px;}
+.third-label { left: 200px;}
+.fourth-label { left: 300px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+	<form class="tabs-layout">
+		<label for="pehlalabel">
+			<input id="pehlalabel" type="radio" name="tab" value="pehlalabel" checked>
+			<div class="label first-label">What ??</div>
+			<div class="content">
+				<h2>What is Lorem Ipsum?</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<p><a href="http://codepen.io/mrdogra007/pens/popular/" target="_blank">See more free plugins</a></p>
+			</div>
+		</label>
+		
+		<label for="dusralabel">
+			<input id="dusralabel" type="radio" name="tab" value="dusralabel">
+			<div class="label second-label">Why ??</div>
+			<div class="content">
+				<h2>Why do we use it?</h2>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+				<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				<p><a href="http://codepen.io/mrdogra007/pens/popular/" target="_blank">See more free plugins</a></p>
+			</div>
+		</label>
+		
+		<label for="tisralabel">
+			<input id="tisralabel" type="radio" name="tab" value="tisralabel">
+			<div class="label third-label">Where ??</div>
+			<div class="content">
+				<h2>Where can I get some?</h2>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+				<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+				<p><a href="http://codepen.io/mrdogra007/pens/popular/" target="_blank">See more free plugins</a></p>
+			</div>
+		</label>
+		
+		<label for="chauthalabel">
+			<input id="chauthalabel" type="radio" name="tab" value="chauthalabel">
+			<div class="label fourth-label">When ??</div>
+			<div class="content">
+				<h2>When it happened?</h2>
+				<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>
+				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+				<p><a href="http://codepen.io/mrdogra007/pens/popular/" target="_blank">See more free plugins</a></p>
+			</div>
+		</label>
+	</form>
+</div>
+
+<div class="wrapper dark">
+	<div class="about">
+		<h1>Pure CSS based tabs plugin</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+		<p>Looking for more free plugins, checkout my <a href="http://codepen.io/mrdogra007/pens/popular/" target="_blank">Codepen page</a> and need customization, ask me on Twitter <strong><a href="https://twitter.com/mrdogra007" target="_blank">@mrdogra007</a></strong></p>
+		<p>Regards, <br>Nishant Dogra</p>
+	</div>
+</div>
+  
+  
+
+</body>
+
+</html>
