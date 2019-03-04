@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body { font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.8; color: #323232;}
+.nav { margin: auto; float: none; text-align: center; position: relative; top: -55px;}
+.nav li { display: inline-block; width: 35px; height: 35px; text-align: center; line-height: 35px; border-radius: 50%; background: rgba(255,255,255,.75); overflow: hidden;}
+.nav li a { width: 35px; height: 35px; color: #f38120; text-decoration: none; float: left;}
+.nav li a:active { background-color: #f38120; color: #ffffff;}
+scroll-container { display: block; width: 90%; margin: auto;  height: calc(100vh - 20px); overflow: hidden; scroll-behavior: smooth; border-radius: 35px;  box-shadow: 0px 30px 30px rgba( 0, 0, 0, .50 );}
+scroll-page { display: flex; align-items: center; justify-content: center; height: 100%; min-height: 100vh;}
+h1 { text-align: center; font-size: 28px; letter-spacing: -1px; color: #ffffff; font-weight: bold;}
+h3 { text-align: center; font-size: 22px; letter-spacing: -1px; margin: 5px 0 0;}
+p { text-align: center; color: #454545; margin: 0 0 10px;}
+.first-grid, .second-grid, .third-grid, .fourth-grid { text-decoration: underline;}
+#grid1 { background: url('https://pbs.twimg.com/media/DnMnYoFWwAAaoqN.jpg'); background-size: cover; background-position: center;}
+#grid2 { background: url('https://pbs.twimg.com/media/DnMnZhvXcAAUqXo.jpg'); background-size: cover; background-position: center;}
+#grid3 { background: url('https://pbs.twimg.com/media/DnMnacXWwAIY2SP.jpg'); background-size: cover; background-position: center;}
+#grid4 { background: url('https://pbs.twimg.com/media/DnMnbc4XsAAXkmb.jpg'); background-size: cover; background-position: center;}
