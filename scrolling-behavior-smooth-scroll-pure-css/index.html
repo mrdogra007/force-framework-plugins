@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>scrolling behavior for a scrolling box with smooth scroll, pure CSS work</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h3>scrolling behavior for a scrolling box with smooth scroll, pure CSS work; jumpto grid acc to navigation number</h3>
+
+<nav class="navbar navbar-inverse"> 
+	<div class="container-fluid"> 
+		<ul class="nav navbar-nav"> 
+			<li class="active"><a href="#grid1">1<sup>st</sup> Grid</a></li> 
+			<li class="active"><a href="#grid2">2<sup>nd</sup> Grid</a></li> 
+			<li class="active"><a href="#grid3">3<sup>rd</sup> Grid</a></li> 
+			<li class="active"><a href="#grid4">4<sup>th</sup> Grid</a></li> 
+		</ul>
+	</div> 
+</nav>
+
+<scroll-container>
+	<scroll-page id="grid1">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Do you know this is <span class="first-grid">first grid</span></h1>
+			</div>
+		</div>
+	</scroll-page>
+	
+	<scroll-page id="grid2">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Do you know this is <span class="second-grid">second grid</span></h1>
+			</div>
+		</div>
+	</scroll-page>
+	
+	<scroll-page id="grid3">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Do you know this is <span class="third-grid">third grid</span></h1>
+			</div>
+		</div>
+	</scroll-page>
+	
+	<scroll-page id="grid4">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Do you know this is <span class="fourth-grid">fourth grid</span></h1>
+			</div>
+		</div>
+	</scroll-page>
+</scroll-container>
+
+
+<p style="font-style: italic; color: #2196f3; font-size: 18px; text-align: center; margin-top: 50px; margin-bottom: 20px;">Follow me on Twitter: <a href="https://twitter.com/mrdogra007/" target="_blank">@mrdogra007</a></p>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

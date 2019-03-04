@@ -1,0 +1,13 @@
+.navbar { border-radius: 0; margin-bottom: 35px;}
+.nav { margin: auto; float: none; text-align: center;}
+.navbar-nav>li { float: none; display: inline-block;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent;}
+scroll-container { display: block; width: 80%; margin: auto;  height: 250px; overflow: hidden; scroll-behavior: smooth; }
+scroll-page { display: flex; align-items: center; justify-content: center; height: 100%; min-height: 250px;}
+h1 { font-size: 56px; font-weight: 800; letter-spacing: -3px;}
+h3 { text-align: center; font-size: 22px; letter-spacing: -1px; margin: 25px 0;}
+.first-grid, .second-grid, .third-grid, .fourth-grid { text-decoration: underline;}
+.first-grid { color: #20d6f3;}
+.second-grid { color: #4a20f3;}
+.third-grid { color: #f38120;}
+.fourth-grid { color: #f3209f;}
