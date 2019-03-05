@@ -1,0 +1,39 @@
+/* 
+CSS Style sheet
+Ver. 2.3
+Author: Nishant Dogra
+Initial built: 09-10-2017
+Updated: 01-06-2018
+Twitter: @mrdogra007
+*/
+
+body { font-size: 14px; font-weight: 400;}
+div, textarea, input, slelect { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+h1 { text-align: center; margin-top: 50px;}
+.container { width: 100%; max-width: 1024px; min-width: 324px; margin: auto; background-color: #fff;}
+.form-container { width: 100%; margin: 40px 0;}
+.table { width: 100%; min-width: 960px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); display: table; font-size: 14px;}
+.table .input-field { float: none; padding: 0 5px; height: 30px; font-size: 14px;}
+.table-row { display: table-row; background: #f6f6f6;}
+.table-row:nth-of-type(odd) { background: #e9e9e9;}
+.table-row.header { font-weight: 900; color: #ffffff; background: #ea6153;}
+.cell { padding: 8px 12px; display: table-cell;}
+.table ul { margin: 0; padding: 0;}
+.table ul li { list-style: none; display: inline-block;}
+.table ul li a { opacity: .8; margin-right: 3px; height: 16px; float: left;}
+.table ul li a:hover, .table ul li a:focus { opacity: 1;}
+.table ul li a img { max-width: 16px;}
+
+.svg-icon { width: 16px; height: 16px;}
+.svg-icon path, .svg-icon polygon, .svg-icon rect { fill: #1332bf;}
+.svg-icon circle { stroke: #09208a; stroke-width: 1;}
+
+@media only screen and (max-width: 900px){
+	.container { padding: 0 50px;}
+	.form-container { width: 100%; overflow-x: scroll; overflow-y: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);}
+	.table { box-shadow: 0 0 0;}
+}
+
+@media only screen and (max-width: 360px){
+	.container { padding: 0 10px;}
+}
