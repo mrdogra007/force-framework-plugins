@@ -2,7 +2,7 @@
 
 ## Easy to use plugins HTML/CSS based.
 
-Plugins (HTML/CSS) build for Force Framework. Compatible with any version of Force Framework. ment Standards. Here are some of my ideas and freebies, crafted in free time. Check more on my DograsWeblog Drive. http://dograsweblog.com/nishant-dogra/
+Plugins (HTML/CSS) build for Force Framework. Compatible with any version of Force Framework. Explore the plugins library and more are on Codepen https://codepen.io/force-framework/
 
 ![Force Framework](https://letsforce.com/assets/120x120.png)
 
